@@ -15,21 +15,19 @@
                         </div>
                         <div class="col-12 col-md-12 offset-md-0 col-lg-12 offset-lg-0 text-center mb-3 mt-3">
                             @if ($post->photo != null)
-                                <img class="" src="storage/images/{{$post->photo}}" alt="" width="400px">
+                                <img class="" src="storage/images/{{$post->photo}}" alt="" width="80%">
                             @else
-                                <img class="" src="../storage/default.jpg" alt="" width="400px">
+                                <img class="" src="../storage/default.jpg" alt="" width="80%">
                             @endif
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 text-justify">
-                            <p>
-                                @if (strlen($post->description) < 256)
-                                    {{$post->description}}
-                                @else
-                                    {{substr($post->description,0,255)."..."}}
-                                @endif
-                            </p>
+							@if (strlen($post->description) < 256)
+								{{$post->description}}
+							@else
+								{{substr($post->description,0,255)."..."}}
+							@endif
                         </div>
                     </div>
 

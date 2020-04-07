@@ -10,18 +10,18 @@
                     <form method="POST" action="{{route('saveNew')}}"  enctype="multipart/form-data">
                         @csrf
                         <div class="row">
-                            <div class="col-12   col-lg-10 offset-lg-1 text-center mt-4">
+                            <div class="col-10 offset-1   col-lg-10 offset-lg-1 text-center mt-4">
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="title" placeholder="Title" >
                                 </div>
                             </div>
 
-                            <div class="form-group col-12  col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1  col-lg-10 offset-lg-1">
                                 <textarea type="text" class="form-control" name="description" placeholder="Description"></textarea>
                             </div>
 
 
-                            <div class="form-group col-12  col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1  col-lg-10 offset-lg-1">
                                 <label for="country_id">Choose county</label>
                                 <select name="country_id" class="form-control">
                                     <option ></option>
@@ -32,26 +32,26 @@
                             </div>
 
 
-                            <div class="form-group col-12 col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1 col-lg-10 offset-lg-1">
                                 <input type="text" id="customer_phone" class="form-control" name="phone" value="" size="25">
                                 <input type="checkbox" hidden id="phone_mask" checked><label id="descr" for="phone_mask"></label>
                             </div>
 
-                            <div class="form-group col-12 col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1 col-lg-10 offset-lg-1">
                                 <input type="email" class="form-control" name="email" placeholder="Email">
                             </div>
 
-                            <div class="form-group col-12 col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1 col-lg-10 offset-lg-1">
                                 <label for="end_date">Enter the end date</label>
                                 <input type="date" class="form-control" name="end_date">
                             </div>
 
-                            <div class="form-group col-12 col-lg-10 offset-lg-1">
+                            <div class="form-group col-10 offset-1 col-lg-10 offset-lg-1">
                                 <label for="photo">Choose image</label>
                                 <input type="file" class="form-control-file " name="photo">
                             </div>
 
-                            <div class="col-12 col-lg-10 offset-lg-1 mb-4">
+                            <div class="col-10 offset-1 col-lg-10 offset-lg-1 mb-4">
                                 <div class="row">
                                     <div class="col-12 col-lg-9 mb-3">
                                         @include ('map')
@@ -62,7 +62,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group col-12 col-lg-10 offset-lg-1  text-right">
+                            <div class="form-group col-10 offset-1 col-lg-10 offset-lg-1  text-right">
                                 <button type="submit" class="btn btn-success btn-lg ">Save</button>
                             </div>
 
