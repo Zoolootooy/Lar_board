@@ -1,1 +1,5 @@
-You need to install composer and npm dependenses.
+Install composer and npm dependencies.
+```
+composer install
+npm install
+```
