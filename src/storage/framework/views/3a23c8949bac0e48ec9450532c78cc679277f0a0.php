@@ -1,3 +1,6 @@
+
+
+
 <?php $__env->startSection('content'); ?>
 
     <?php echo $__env->make('message', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -48,7 +51,7 @@
 
                         <div class="form-group col-10 offset-1">
                             <?php if($post->photo != null): ?>
-                                <img src="../storage/images/<?php echo e($post->photo); ?>" alt="" width="300px">
+                                <img src="../storage/images/<?php echo e($post->photo); ?>" alt="" width="100%">
                                 <br>
                                 <input type="hidden" name="old_photo" value="<?php echo e($post->photo); ?>">
                                 <input type="hidden" name="delete" value="0">

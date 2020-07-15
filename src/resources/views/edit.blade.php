@@ -51,7 +51,7 @@
 
                         <div class="form-group col-10 offset-1">
                             @if ($post->photo != null)
-                                <img src="../storage/images/{{$post->photo}}" alt="" width="300px">
+                                <img src="../storage/images/{{$post->photo}}" alt="" width="100%">
                                 <br>
                                 <input type="hidden" name="old_photo" value="{{$post->photo}}">
                                 <input type="hidden" name="delete" value="0">

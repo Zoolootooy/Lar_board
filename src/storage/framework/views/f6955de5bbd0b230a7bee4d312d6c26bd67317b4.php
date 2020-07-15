@@ -13,23 +13,21 @@
                         </div>
                         <div class="col-12 col-md-12 offset-md-0 col-lg-12 offset-lg-0 text-center mb-3 mt-3">
                             <?php if($post->photo != null): ?>
-                                <img class="" src="storage/images/<?php echo e($post->photo); ?>" alt="" width="100%">
+                                <img class="" src="storage/images/<?php echo e($post->photo); ?>" alt="" width="40%">
                             <?php else: ?>
-                                <img class="" src="../storage/default.jpg" alt="" width="100%">
+                                <img class="" src="../storage/default.jpg" alt="" width="40%">
                             <?php endif; ?>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12 text-justify">
-                            <p>
-                                <?php if(strlen($post->description) < 256): ?>
-                                    <?php echo e($post->description); ?>
+							<?php if(strlen($post->description) < 256): ?>
+								<?php echo e($post->description); ?>
 
-                                <?php else: ?>
-                                    <?php echo e(substr($post->description,0,255)."..."); ?>
+							<?php else: ?>
+								<?php echo e(substr($post->description,0,255)."..."); ?>
 
-                                <?php endif; ?>
-                            </p>
+							<?php endif; ?>
                         </div>
                     </div>
 
