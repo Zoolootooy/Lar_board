@@ -15,3 +15,4 @@
 .idea/
 /src/.phpstorm.meta.php
 /src/_ide_helper.php
+/sql
